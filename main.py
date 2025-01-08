@@ -55,6 +55,9 @@ def buscarVenda(mesV):
             print(f"Venda encontrada: Mês: {mes}, Venda: R$ {valor}, Meta: R$ {meta}")
             return
     print(f"Nenhuma venda encontrada para o mês {mesV}.")
+    
+validaArquivo.garantir_arquivo_existe(vendasMes.txt)
+
 def main():
     while True:
         limpadorTela()
